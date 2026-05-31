@@ -5,64 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BelysningsProffsen - Solcellslampa</title>
     
-    <!-- 1. Include the Shoppy Embed Script from image_86c321.png -->
+    <!-- 1. Include the Shoppy Embed Script -->
     <script src="https://shoppy.gg/api/embed.js"></script>
 
     <style>
-        body { font-family: system-ui, sans-serif; margin: 0; padding: 0; background: #f9f9f9; text-align: center; color: #1a1a1a; }
-        .container { max-width: 600px; margin: 0 auto; padding: 20px; background: #fff; }
-        h2 { font-size: 24px; margin-bottom: 10px; }
-        p { font-size: 14px; color: #4a4a4a; line-height: 1.5; }
-        .hero-img { width: 100%; height: auto; margin-bottom: 25px; }
+        /* Modern E-Commerce Standard Reset & Typography */
+        body { 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: #ffffff; 
+            text-align: center; 
+            color: #1a1a1a; 
+            -webkit-font-smoothing: antialiased;
+        }
         
-        /* Kaching Bundle Visual Grid Styling */
-        .bundle-grid { display: flex; flex-direction: column; gap: 15px; margin: 25px 0; }
-        .bundle-option { border: 2px solid #e0e0e0; padding: 15px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; position: relative; background: #fff; }
-        .bundle-option.popular { border-color: #2e7d32; background: #f1f8e9; }
-        .badge { position: absolute; top: -10px; right: 15px; background: #2e7d32; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: bold; }
+        /* Flawless 1:1 Desktop Viewport Max Bound */
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            box-sizing: border-box;
+        }
         
-        /* Custom Shoppy Checkout Buttons */
-        .buy-btn { background: #2e7d32; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 5px; cursor: pointer; transition: 0.2s; }
-        .buy-btn:hover { background: #1b5e20; }
+        /* Heading Layout & Balance */
+        h2 { 
+            font-size: 32px; 
+            font-weight: 700;
+            line-height: 1.3;
+            margin: 0 auto 16px auto; 
+            max-width: 680px;
+            color: #111111;
+            letter-spacing: -0.5px;
+        }
+        
+        /* Paragraph Content Block */
+        p { 
+            font-size: 15px; 
+            color: #4a4a4a; 
+            line-height: 1.6; 
+            margin: 0 auto 32px auto;
+            max-width: 620px;
+        }
+        
+        /* Full Bleed High-Res Image Optimization */
+        .hero-img { 
+            width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Fluid Mobile Scaling Overrides */
+        @media (max-width: 768px) {
+            .container { padding: 24px 16px; }
+            h2 { font-size: 24px; margin-bottom: 12px; max-width: 100%; }
+            p { font-size: 13.5px; margin-bottom: 24px; max-width: 100%; }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- FIRST SECTION -->
+        <!-- FIRST SECTION: 1:1 Match for 1st Section_2.jpg -->
         <h2>Stämningsfullt Sken På Trappan, Terassen Eller Balkongen</h2>
         <p>Helt utan sladdar eller krångel. Denna solcellsdrivna LED-lampa monteras på några sekunder och lyser automatiskt upp dina kvällar.</p>
         <img class="hero-img" src="1.webp" alt="Product Image">
 
-        <!-- KACHING BUNDLE SIMULATION SECTION -->
-        <h3>Välj ditt paket:</h3>
-        <div class="bundle-grid">
-            
-            <!-- Option 1: 4 Pack -->
-            <div class="bundle-option">
-                <div><strong>4x Solcellslampor</strong><p style="margin:4px 0 0 0; color:#666;">Perfekt för mindre trappor</p></div>
-                <button class="buy-btn" data-shoppy-product="PRODUCT_ID_1">Köp Nu - 299 kr</button>
-            </div>
-
-            <!-- Option 2: 8 Pack (Popular) -->
-            <div class="bundle-option popular">
-                <span class="badge">MEST POPULÄR</span>
-                <div><strong>8x Solcellslampor (Spara 15%)</strong><p style="margin:4px 0 0 0; color:#666;">Perfekt för hela altanen</p></div>
-                <!-- This matches the exact dynamic trigger function shown in image_86c321.png -->
-                <button class="buy-btn" data-shoppy-product="PRODUCT_ID_2">Köp Nu - 499 kr</button>
-            </div>
-
-            <!-- Option 3: 16 Pack -->
-            <div class="bundle-option">
-                <div><strong>16x Solcellslampor (Spara 30%)</strong><p style="margin:4px 0 0 0; color:#666;">Bästa värdet för villan</p></div>
-                <button class="buy-btn" data-shoppy-product="PRODUCT_ID_3">Köp Nu - 799 kr</button>
-            </div>
-
-        </div>
-
-        <!-- REST OF THE LANDING PAGE SECTIONS GO HERE -->
-        <!-- Just stack your headings, text blocks, image grids, and FAQs cleanly down here -->
-
+        <!-- REST OF THE LANDING PAGE SECTIONS STACK CLEANLY BELOW -->
     </div>
 
 </body>
