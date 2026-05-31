@@ -9,70 +9,88 @@
     <script src="https://shoppy.gg/api/embed.js"></script>
 
     <style>
-        /* Modern E-Commerce Standard Reset & Typography */
+        /* Modern Full-Bleed Global Reset */
         body { 
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; 
             margin: 0; 
             padding: 0; 
             background: #ffffff; 
             text-align: center; 
             color: #1a1a1a; 
+            overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
         
-        /* Flawless 1:1 Desktop Viewport Max Bound */
-        .container { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
+        /* Shopify Standard Ultra-Wide Section Container */
+        .shopify-section { 
+            width: 100%;
+            max-width: 100%;
+            padding: 60px 0 0 0; 
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        /* Text Wrapper to keep typography perfectly readable on huge screens */
+        .text-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
             box-sizing: border-box;
         }
         
-        /* Heading Layout & Balance */
+        /* Heading Typography */
         h2 { 
-            font-size: 32px; 
+            font-size: 38px; 
             font-weight: 700;
-            line-height: 1.3;
-            margin: 0 auto 16px auto; 
-            max-width: 680px;
+            line-height: 1.25;
+            margin: 0 auto 18px auto; 
+            max-width: 850px;
             color: #111111;
             letter-spacing: -0.5px;
         }
         
-        /* Paragraph Content Block */
+        /* Paragraph Block */
         p { 
-            font-size: 15px; 
+            font-size: 16px; 
             color: #4a4a4a; 
             line-height: 1.6; 
-            margin: 0 auto 32px auto;
-            max-width: 620px;
+            margin: 0 auto 40px auto;
+            max-width: 700px;
         }
         
-        /* Full Bleed High-Res Image Optimization */
+        /* 1:1 Full-Width Premium Image Banner */
         .hero-img { 
             width: 100%; 
+            max-width: 100%;
             height: auto; 
             display: block;
             margin: 0 auto;
         }
 
-        /* Fluid Mobile Scaling Overrides */
+        /* Perfect Mobile Fluid Repositioning Overrides */
         @media (max-width: 768px) {
-            .container { padding: 24px 16px; }
-            h2 { font-size: 24px; margin-bottom: 12px; max-width: 100%; }
-            p { font-size: 13.5px; margin-bottom: 24px; max-width: 100%; }
+            .shopify-section { padding: 32px 0 0 0; }
+            .text-container { padding: 0 20px; }
+            h2 { font-size: 26px; margin-bottom: 14px; max-width: 100%; }
+            p { font-size: 14px; margin-bottom: 28px; max-width: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- FIRST SECTION: 1:1 Match for 1st Section_2.jpg -->
-        <h2>Stämningsfullt Sken På Trappan, Terassen Eller Balkongen</h2>
-        <p>Helt utan sladdar eller krångel. Denna solcellsdrivna LED-lampa monteras på några sekunder och lyser automatiskt upp dina kvällar.</p>
+    <!-- FULL WIDTH SHOPIFY SECTION WRAPPER -->
+    <div class="shopify-section">
+        
+        <!-- Text Blocks controlled beautifully for desktop/mobile viewports -->
+        <div class="text-container">
+            <h2>Stämningsfullt Sken På Trappan, Terassen Eller Balkongen</h2>
+            <p>Helt utan sladdar eller krångel. Denna solcellsdrivna LED-lampa monteras på några sekunder och lyser automatiskt upp dina kvällar.</p>
+        </div>
+
+        <!-- Full-Bleed Raw Asset -->
         <img class="hero-img" src="1.webp" alt="Product Image">
 
-        <!-- REST OF THE LANDING PAGE SECTIONS STACK CLEANLY BELOW -->
     </div>
 
 </body>
