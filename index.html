@@ -4,94 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BelysningsProffsen - Solcellslampa</title>
-    
-    <!-- 1. Include the Shoppy Embed Script -->
     <script src="https://shoppy.gg/api/embed.js"></script>
+</head>
+<body style="margin: 0; padding: 0; background: #ffffff; overflow-x: hidden; font-family: Inter, -apple-system, sans-serif; text-align: center; -webkit-font-smoothing: antialiased;">
 
+    <section class="shopify-section-hero">
+        <style>
+            .shopify-section-hero {
+                width: 87%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding-top: 60px;
+                box-sizing: border-box;
+            }
+            .hero-text-container {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .hero-heading {
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 1.25;
+                color: #282828;
+                margin: 0 auto 18px auto;
+            }
+            .hero-description {
+                font-size: 16px;
+                line-height: 1.6;
+                color: #282828;
+                margin: 0 auto 40px auto;
+            }
+            .hero-image {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                border-radius: 6px;
+            }
+            @media (max-width: 767px) {
+                .shopify-section-hero { padding-top: 32px; width: 90%; }
+                .hero-heading { font-size: 26px; margin-bottom: 14px; }
+                .hero-description { font-size: 14px; margin-bottom: 28px; }
+            }
+        </style>
+
+        <div class="hero-text-container">
+            <h2 class="hero-heading">Stämningsfullt Sken På Trappan, Terassen Eller Balkongen</h2>
+            <p class="hero-description">Helt utan sladdar eller krångel. Denna solcellsdrivna LED-lampa monteras på några sekunder och lyser automatiskt upp dina kvällar.</p>
+        </div>
+        <img class="hero-image" src="1.webp" alt="Product Image">
+    </section>
+
+    <!-- FULL-WIDTH BACKGROUND WRAPPER SECTION 🚀 -->
+<section class="shopify-section-video">
     <style>
-        /* Modern Full-Bleed Global Reset */
-        body { 
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background: #ffffff; 
-            text-align: center; 
-            color: #1a1a1a; 
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
+        .shopify-section-video {
+            width: 100%; /* 🔥 Forces the background color to span full screen width */
+            max-width: 100%;
+            background-color: #f4f4f4; /* Highlighted line from image_6bfc62.png */
+            padding: 60px 0; /* Creates balanced, premium padding inside the shaded block */
+            box-sizing: border-box;
+            margin-top: 60px; /* Adds breathing room from the previous section */
         }
         
-        /* Shopify Standard Ultra-Wide Section Container */
-        .shopify-section { 
+        /* New Inner Content Box to maintain your crisp alignment boundaries 📐 */
+        .video-inner-container {
             width: 87%;
-            max-width: 100%;
-            padding: 60px 0 0 0; 
-            margin: 0 auto;
-            box-sizing: border-box;
-        }
-
-        /* Text Wrapper to keep typography perfectly readable on huge screens */
-        .text-container {
-            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 40px;
             box-sizing: border-box;
         }
-        
-        /* Heading Typography */
-        h2 { 
-            font-size: 38px; 
+
+        .video-heading {
+            font-size: 30px;
             font-weight: 700;
+            color: #282828;
             line-height: 1.25;
-            margin: 0 auto 18px auto; 
-            max-width: 850px;
-            color: #111111;
-            letter-spacing: -0.5px;
-        }
-        
-        /* Paragraph Block */
-        p { 
-            font-size: 16px; 
-            color: #4a4a4a; 
-            line-height: 1.6; 
-            margin: 0 auto 40px auto;
-            max-width: 700px;
-        }
-        
-        /* 1:1 Full-Width Premium Image Banner */
-        .hero-img { 
-            width: 100%; 
-            max-width: 100%;
-            height: auto; 
-            display: block;
-            margin: 0 auto;
+            margin: 0 auto 45px auto; /* Streamlined to prevent clipping inside full-width bands */
+            text-align: center;
         }
 
-        /* Perfect Mobile Fluid Repositioning Overrides */
-        @media (max-width: 768px) {
-            .shopify-section { padding: 32px 0 0 0; }
-            .text-container { padding: 0 20px; }
-            h2 { font-size: 26px; margin-bottom: 14px; max-width: 100%; }
-            p { font-size: 14px; margin-bottom: 28px; max-width: 100%; }
+        /* Responsive aspect ratio container for YouTube 📐 */
+        .youtube-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .youtube-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 767px) {
+            .shopify-section-video { padding: 40px 0; }
+            .video-inner-container { width: 90%; }
+            .video-heading { font-size: 22px; margin-bottom: 28px; }
         }
     </style>
-</head>
-<body>
 
-    <!-- FULL WIDTH SHOPIFY SECTION WRAPPER -->
-    <div class="shopify-section">
+    <!-- Content constraint wrapper starts here 📦 -->
+    <div class="video-inner-container">
         
-        <!-- Text Blocks controlled beautifully for desktop/mobile viewports -->
-        <div class="text-container">
-            <h2>Stämningsfullt Sken På Trappan, Terassen Eller Balkongen</h2>
-            <p>Helt utan sladdar eller krångel. Denna solcellsdrivna LED-lampa monteras på några sekunder och lyser automatiskt upp dina kvällar.</p>
+        <h2 class="video-heading">Sladdfritt och solcellsdrivet. Diskret design. Lång driftstid. Tål alla väder.</h2>
+        
+        <div class="youtube-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/THUMSKiGOgA?autoplay=0&mute=1&loop=1&playlist=THUMSKiGOgA&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
+                allow="encrypted-media" 
+                allowfullscreen>
+            </iframe>
         </div>
 
-        <!-- Full-Bleed Raw Asset -->
-        <img class="hero-img" src="1.webp" alt="Product Image">
+    </div> <!-- Content constraint wrapper ends here 📦 -->
+</section>
 
-    </div>
+    <section class="shopify-section-features">
+    <style>
+        .shopify-section-features {
+            width: 87%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 60px;
+            box-sizing: border-box;
+        }
+        .features-heading {
+            font-size: 34px; /* Perfectly matched to previous section sizes 🎯 */
+            font-weight: 700;
+            line-height: 1.25;
+            color: #282828;
+            margin: 0px auto 55px auto;
+            text-align: center;
+        }
+        .features-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+        }
+        @media (max-width: 767px) {
+            .shopify-section-features { 
+                padding-top: 32px; 
+                width: 90%; 
+            }
+            .features-heading { 
+                font-size: 26px; /* Perfectly matched mobile scaling 📱 */
+                margin-bottom: 28px; 
+            }
+        }
+    </style>
 
-</body>
+    <h2 class="features-heading">💡 Varför du kommer älska den</h2>
+    
+    <img class="features-image" src="2.webp" alt="Varför du kommer älska den">
+</section>
+
+
+
+
+
+    </body>
 </html>
